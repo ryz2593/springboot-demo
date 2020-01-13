@@ -1,16 +1,16 @@
-jdbc:
-  driverClassName: com.mysql.jdbc.Driver
-  url: jdbc:mysql://172.17.28.129:3306/P365MyTest
-  username: root
-  password: Arcsoft01
-  user:
-    name: zhangsan
-    age: 21
-    language:
-      - java
-      - php
-      - python
-
+#test config
+#jdbc:
+#  driverClassName: com.mysql.jdbc.Driver
+#  url: jdbc:mysql://172.17.28.129:3306/P365MyTest
+#  username: root
+#  password: Arcsoft01
+#  user:
+#    name: zhangsan
+#    age: 21
+#    language:
+#      - java
+#      - php
+#      - python
 
 server:
   port: 8088
@@ -20,3 +20,20 @@ logging:
   level:
     cn.itcast: debug
 #    org.springframework: debug
+
+#jdbc数据库连接参数
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://172.17.28.129:3306/P365MyTest
+    username: root
+    password: Arcsoft01
+
+#mybatis配置
+mybatis:
+  configuration:
+    #驼峰命名开启 通用mapper中默认设置了为true，因此这里可以不用设置了
+    #map-underscore-to-camel-case: true
+  #别名包路径配置
+    type-aliases-package: cn.itcast.pojo
+#  mapper-locations: mapper/*.xml
