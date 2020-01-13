@@ -10,3 +10,13 @@ jdbc:
       - java
       - php
       - python
+
+
+server:
+  port: 8088
+  servlet:
+    path: /
+logging:
+  level:
+    cn.itcast: debug
+#    org.springframework: debug

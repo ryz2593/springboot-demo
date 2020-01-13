@@ -12,8 +12,8 @@ import javax.sql.DataSource;
 @RestController
 public class HelloController {
 
-    @Autowired
-    private DataSource dataSource;
+//    @Autowired
+//    private DataSource dataSource;
 
     @GetMapping("hello")
     public String hello() {
