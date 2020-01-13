@@ -1,0 +1,12 @@
+jdbc:
+  driverClassName: com.mysql.jdbc.Driver
+  url: jdbc:mysql://172.17.28.129:3306/P365MyTest
+  username: root
+  password: Arcsoft01
+  user:
+    name: zhangsan
+    age: 21
+    language:
+      - java
+      - php
+      - python
