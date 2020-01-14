@@ -15,10 +15,10 @@ import javax.sql.DataSource;
  * f方式2
  * @EnableConfigurationProperties(JdbcProperties.class)
  */
-@Configuration
-
+//@Configuration
 //
-public class JdbcConfig {
+////
+//public class JdbcConfig {
 
     /**
      * 方式1
@@ -62,11 +62,11 @@ public class JdbcConfig {
     /**
      * 第三种方式
      */
-    @Bean
-    @ConfigurationProperties(prefix = "jdbc")
-    public DataSource dataSource() {
-        return new DruidDataSource();
-
-    }
-
-}
+//    @Bean
+//    @ConfigurationProperties(prefix = "jdbc")
+//    public DataSource dataSource() {
+//        return new DruidDataSource();
+//
+//    }
+//
+//}

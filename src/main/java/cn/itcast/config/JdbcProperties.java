@@ -11,21 +11,21 @@ import java.util.List;
  * @date 2020/1/13 14:37
  */
 //@ConfigurationProperties(prefix = "jdbc")
-@Data
+//@Data
 //方式2
 //直接加component注解或者在 JdbcConfig类上加@EnableConfigurationProperties注解
-@Component
-public class JdbcProperties {
-    String url;
-    String driverClassName;
-    String username;
-    String password;
-    //yaml 可以注入对象属性
-    User user = new User();
-
-    class User{
-        String name;
-        int age;
-        List<String> language;
-    }
-}
+//@Component
+//public class JdbcProperties {
+//    String url;
+//    String driverClassName;
+//    String username;
+//    String password;
+//    //yaml 可以注入对象属性
+//    User user = new User();
+//
+//    class User{
+//        String name;
+//        int age;
+//        List<String> language;
+//    }
+//}
