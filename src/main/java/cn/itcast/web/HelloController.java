@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @Slf4j
-@RequestMapping("user")
+@RequestMapping("/user")
 public class HelloController {
 
 //    @Autowired
@@ -23,13 +23,13 @@ public class HelloController {
     @Autowired
     private UserService userService;
 
-    @GetMapping("hello")
+    @GetMapping("/hello")
     public String hello() {
         log.debug("hello method is running");
         return "hello, spring boot!";
     }
 
-    @GetMapping("{id}")
+    @GetMapping("/{id}")
     public User queryByUserId(@PathVariable("id") Long id) {
         return userService.queryById(id);
     }

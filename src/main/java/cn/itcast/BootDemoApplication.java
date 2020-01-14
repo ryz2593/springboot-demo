@@ -14,6 +14,6 @@ import tk.mybatis.spring.annotation.MapperScan;
 public class BootDemoApplication {
     public static void main(String[] args) {
         //args是main函数的参数，当在命令行启动时会用到
-        SpringApplication.run(BootDemoApplication.class, args);
+        SpringApplication.run(BootDemoApplication.class);
     }
 }
